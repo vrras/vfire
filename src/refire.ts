@@ -1,5 +1,4 @@
 import init from './firebase';
-
 export default class Refire {
   private firebaseLib
   private firestore;
