@@ -1,5 +1,5 @@
 {
-  "name": "refire",
+  "name": "vfire",
   "version": "1.0.0",
   "description": "Firebase wrapper",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "storage",
     "firesql"
   ],
-  "author": "Firas Luthfi",
+  "author": "Firas Luthfi <vrrases@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "firebase": "^8.2.0",
