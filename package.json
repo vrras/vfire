@@ -4,7 +4,6 @@
   "description": "Firebase wrapper",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc",
     "test": "node test.js"
   },
   "keywords": [
