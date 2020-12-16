@@ -2,7 +2,7 @@
   "name": "vfire",
   "version": "1.0.1-0",
   "description": "Firebase wrapper",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "tsc": "tsc",
     "test": "echo \"no test specified\""

@@ -10,7 +10,7 @@
     "allowSyntheticDefaultImports": true,
     "target": "es6",
     "sourceMap": true,
-    "outDir": "./dist",
+    "outDir": "./",
     "baseUrl": "./",
     "strictPropertyInitialization": false
   },
