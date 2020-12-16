@@ -2,6 +2,12 @@
   "name": "vfire",
   "version": "1.0.1",
   "description": "Firebase wrapper",
+  "maintainers": [
+    {
+      "name": "Firas Luthfi",
+      "email": "vrrases@gmail.com"
+    }
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"no test specified\""
@@ -12,8 +18,16 @@
     "storage",
     "firesql"
   ],
-  "author": "Firas Luthfi <vrrases@gmail.com>",
+  "repository": {
+    "url": "https://github.com/vrras/vfire.git",
+    "type": "git"
+  },
+  "author": {
+    "name": "Firas Luthfi",
+    "email": "vrrases@gmail.com"
+  },
   "license": "MIT",
+  "readmeFilename": "README.md",
   "dependencies": {
     "firebase": "^8.2.0",
     "firesql": "^2.0.2",
