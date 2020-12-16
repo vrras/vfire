@@ -15,9 +15,9 @@
     "strictPropertyInitialization": false
   },
   "include": [
-    "**/*.js",
-    "**/*.json",
-    "**/*.ts",
+    "src/**/*.js",
+    "src/**/*.json",
+    "src**/*.ts",
   ],
   "exclude": ["node_modules", "dist"]
 }
