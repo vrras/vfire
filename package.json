@@ -1,6 +1,6 @@
 {
   "name": "vfire",
-  "version": "1.0.1-0",
+  "version": "1.0.1-1",
   "description": "Firebase wrapper",
   "main": "index.js",
   "scripts": {
