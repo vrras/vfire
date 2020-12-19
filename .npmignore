@@ -1,1 +1,7 @@
-test.js
+node_modules
+sample
+test
+
+.env
+.env.example
+.gitignore

@@ -1,7 +1,7 @@
 {
   "name": "vfire",
   "version": "1.0.5",
-  "description": "Firebase wrapper",
+  "description": "Library that is useful for minimizing code redundancies in using Firebase and of course easy to use",
   "maintainers": [
     {
       "name": "Firas Luthfi",
@@ -10,7 +10,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "./node_modules/mocha/bin/mocha --timeout 30000"
   },
   "keywords": [
     "firebase",
@@ -34,5 +34,8 @@
     "rxfire": "^4.0.0",
     "rxjs": "^6.6.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "mocha": "^8.2.1"
+  }
 }
