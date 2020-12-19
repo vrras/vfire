@@ -1,6 +1,6 @@
 {
   "name": "vfire",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Library that is useful for minimizing code redundancies in using Firebase and of course easy to use",
   "maintainers": [
     {
