@@ -1,7 +1,6 @@
 <h3 align="center">Vfire</h3>
 
 <p align="center">
-  
   Library that is useful for minimizing code redundancies in using Firebase and of course easy to use.
   <br>
   <br>
@@ -104,7 +103,7 @@ const refCode = vfire.randomName('alphaNumeric', 8);
 ```
 There are 2 arguments of `randomName`:
 | Parameter | Default | Behaviour | Type | Argument |
-  | :--- | :---: | :---: | :---: | ---: |
+  | :--- | :---: | :--- | :---: | :---: |
   | `type` | **alphaNumberic** | Return random name with `numeric` type, `alphabet` type or `alphaNumberic` type | `String` | `numeric`, `alphabet`, `alphaNumberic` |
   | `length` | **5** | Return random name with the specified total characters | `Number` | `Number` |
 ### Signup (Auth)
@@ -120,9 +119,9 @@ signup('example@mail.com', 'examplepassword')
 ```
 There are 2 arguments of `signup`:
 | Parameter | Default | Type | Argument |
-  | --- | :---: | --- | --- | --- |
-  `email` | **No default** | `String` | `String`
-  `password` | **No default** | `String` | `String`
+  | :--- | :---: | :---: | :---: |
+  | `email` | **No default** | `String` | `String` |
+  | `password` | **No default** | `String` | `String` |
 ### Signin (Auth)
 Example of `signin`:
 ```
@@ -136,7 +135,7 @@ vfire.signin('example@mail.com', 'examplepassword')
 ```
 There are 2 arguments of `signin`:
 | Parameter | Default | Type | Argument |
-  | :--- | :---: | :---: | ---: |
+  | :--- | :---: | :---: | :---: |
   | `email` | **No default** | `String` | `String` |
   | `password` | **No default** | `String` | `String` |
 ### Signout (Auth)
@@ -163,7 +162,7 @@ vfire.resetPassword('example@mail.com')
 ```
 There is an argument of `resetPassword`:
 | Parameter | Default | Type | Argument |
-  | --- | :---: | --- | --- |
+  | :--- | :---: | :---: | :---: |
   `email` | **No default** | `String` | `String`
 ### Current user
 Example of `currentUser`:
@@ -205,13 +204,13 @@ vfire.getCollection(params)
 ```
 There is an argument of `getCollection`:
 | Parameter | Default | Type | Argument |
-  | :--- | :---: | :---: | ---: |
+  | :--- | :---: | :---: | :---: |
   | `params` | **No default** | `Object` | `Object` |
 
 And for the field of coll, filters, order and limit, it follows these rules:
 
 | Parameter | Default | Behavior | Type | Example |
-  | :--- | :---: | :---: | :---: | ---: |
+  | :--- | :---: | :---: | :---: | :--- |
   | `coll` | **No default** | Return entries that match the `collection / subcollection` | `String` | `your/path/collection` |
   | `filters` | **No default** | Return entries that match with filter | `Array` | `[{ field: 'point', operator: '>', value: 1000 }, { field: 'fullname', operator: '==', value: 'John Doe' }]` |
   | `order` | **No default** | Return entries with order | `Object` | `{ field: 'fullname', 'sort': 'asc | desc'}` |
@@ -238,12 +237,12 @@ vfire.addDocument(params)
 ```
 There is an argument of `addDocument`:
 | Parameter | Default | Type | Argument |
-  | :--- | :---: | :---: | ---: |
+  | :--- | :---: | :---: | :---: |
   | `params` | **No default** | `Object` | `Object` |
 
 And for the field of coll and data, it follows these rules:
 | Parameter | Default | Behavior | Type | Example |
-  | :--- | :---: | :---: | :---: | ---: |
+  | :--- | :---: | :--- | :---: | :--- |
   | `coll` | **No default** | Add entries to the collection `collection / subcollection` | `String` | `your/path/collection` |
   | `data` | **No default** | Data entries that want to add | `Object` | `{ fullname: 'John Doe', email: 'john.doe@example.com', point: 1000 }` |
 ### Update document (Firestore)
@@ -267,12 +266,12 @@ vfire.updateDocument(params)
 ```
 There is an argument of `updateDocument`:
 | Parameter | Default | Type | Argument |
-  | :--- | :---: | :---: | ---: |
+  | :--- | :---: | :---: | :---: |
   | `params` | **No default** | `Object` | `Object` |
 
 And for the field of coll and data, it follows these rules:
 | Parameter | Default | Behavior | Type | Example |
-  | :--- | :---: | :---: | :---: | ---: |
+  | :--- | :---: | :--- | :---: | :--- |
   | `coll` | **No default** | `Collection / Subcollection` that want to update | `String` | `your/path/collection` |
   | `data` | **No default** | Data entries want to update, you must add `key` | `Object` | `{ key: 'docId', point: 1200 }` |
 ### Delete document (Firestore)
@@ -295,12 +294,12 @@ vfire.deleteDocument(params)
 ```
 There is an argument of `deleteDocument`:
 | Parameter | Default | Type | Argument |
-  | :--- | :---: | :---: | ---: |
+  | :--- | :---: | :---: | :---: |
   | `params` | **No default** | `Object` | `Object` |
 
 And for the field of coll and data, it follows these rules:
 | Parameter | Default | Behavior | Type | Example |
-  | :--- | :---: | :---: | :---: | ---: |
+  | :--- | :---: | :--- | :---: | :--- |
   | `coll` | **No default** | `Collection / Subcollection` that want to delete | `String` | `your/path/collection` |
   | `data` | **No default** | Document key that want to delete, you must add `key` | `Object` | `{ key: 'docId' }` |
 ### Delete document batch (Firestore)
@@ -327,12 +326,12 @@ vfire.deleteDocumentBatch(params)
 ```
 There is an argument of `updateDocument`:
 | Parameter | Default | Type | Argument |
-  | :--- | :---: | :---: | ---: |
+  | :--- | :---: | :---: | :---: |
   | `params` | **No default** | `Object` | `Object` |
 
 And for the field of coll and filters, it follows these rules:
 | Parameter | Default | Behavior | Type | Example |
-  | :--- | :---: | :---: | :---: | ---: |
+  | :--- | :---: | :--- | :---: | :--- |
   | `coll` | **No default** | `Collection / Subcollection` that want to delete | `String` | `your/path/collection` |
   | `filters` | **No default** | Delete entries that match with filter | `Object` | `[{ field: 'point', operator: '<', value: 1000 }]` |
 ### Raw query (Firestore)
@@ -366,7 +365,7 @@ res.then(data => {
 ```
 There are 4 arguments of `rawQuery`:
 | Parameter | Default | Type | Example |
- | :--- | :---: | :---: | ---: |
+ | :--- | :---: | :---: | :--- |
   | `query` | **No default** | `String` | `SELECT key, fullname, email, point, is_verified FROM __coll__ WHERE email = $1 AND password = $2` <br> **Warning:** <br> 1. `__coll__` don't replace it <br> 2. `$1, $2, ..., $n` if you want to add param like `WHERE, ORDER or LIMIT` based on params |
   | `coll` | **No default** | `String` | `your/path/collection` |
   | `params` | **No default** | `Array` | `['example@mail.com', 'examplepassword']` |
@@ -398,7 +397,7 @@ vfire.uploadStorageFirebase('your/path', imageAsFile, filename, 'delete/fullpath
 ```
 There are 4 arguments of `uploadStorageFirebase`:
 | Parameter | Default | Type | Example |
- | --- | :---: | --- | --- |
+ | :--- | :---: | :---: | :--- |
   `path` | **No default** | `String` | `your/path`
   `file` | **No default** | `File` | `event.target.files[0]`
   `storageName` | **No default** | `String` | `${new Date().getTime()}-${imageAsFile.name}`
@@ -416,7 +415,7 @@ vfire.deleteStorageDirectoryFirebase('your/path')
 ```
 There is an argument of `deleteStorageDirectoryFirebase`:
 | Parameter | Default | Type | Example |
- | --- | :---: | --- | --- |
+ | :--- | :---: | :---: | :--- |
   `fullPath` | **No default** | `String` | `your/fullpath`
 ## ⛏️ Built Using
 
