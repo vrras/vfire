@@ -1,7 +1,8 @@
 <h3 align="center">Vfire</h3>
 
 <p align="center">
-  The easy way to use firebase and minimizing code redudancies
+  
+  Library that is useful for minimizing code redundancies in using Firebase and of course easy to use.
   <br>
   <br>
   <img src="https://img.shields.io/badge/status-active-success.svg">
@@ -13,10 +14,6 @@
 </p>
 
 ---
-
-<p align="center"> 
-  Library that is useful for minimizing code redundancies in using Firebase and of course easy to use.
-</p>
 
 ## 📝 Table of Contents
 
