@@ -210,7 +210,7 @@ There is an argument of `getCollection`:
 And for the field of coll, filters, order and limit, it follows these rules:
 
 | Parameter | Default | Behavior | Type | Example |
-  | :--- | :---: | :---: | :---: | :--- |
+  | :--- | :---: | :--- | :---: | :--- |
   | `coll` | **No default** | Return entries that match the `collection / subcollection` | `String` | `your/path/collection` |
   | `filters` | **No default** | Return entries that match with filter | `Array` | `[{ field: 'point', operator: '>', value: 1000 }, { field: 'fullname', operator: '==', value: 'John Doe' }]` |
   | `order` | **No default** | Return entries with order | `Object` | `{ field: 'fullname', 'sort': 'asc | desc'}` |
@@ -371,7 +371,6 @@ There are 4 arguments of `rawQuery`:
   | `params` | **No default** | `Array` | `['example@mail.com', 'examplepassword']` |
   | `realtime` | **true** | `Boolean` | `true`, `false` | 
 
-<br><br>
 **Limitations**
 * Only SELECT queries for now. Support for INSERT, UPDATE, and DELETE might come in the future.
 * No support for JOINs.
